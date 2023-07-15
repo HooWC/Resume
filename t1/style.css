@@ -3,6 +3,33 @@
     padding:0;       
 }
 
+.view-btn{
+  padding:5px 10px;
+  width:100px;
+  display:flex;
+  justify-content:center;
+  align-content: center;
+  background-color:rgb(255, 255, 255);
+  border-radius: 3px;
+  margin-top: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.view-btn:hover{
+  background-color:rgb(176, 64, 0);
+  color:white;
+}
+
+.view-btn:hover p{
+  color:white;
+}
+
+.view-btn p{
+  font-size: 1px;
+  color:black;
+  font-weight: bold;
+}
+
 @font-face {
 
    
@@ -94,7 +121,7 @@
       max-width: 100%;
       font-size: 3vmin;
     }
-    .title-box p {
+    .title-box .title-p {
       font-family: "HelveticaNow";
       font-size: 2vmin;
       padding-top: 0;
@@ -240,7 +267,17 @@
     .swiper-button-disabled.swiper-button-next span {
       opacity: 0.2;
     }
+
+
+
     @media screen and (max-width: 512px) {
+
+      .view-btn{
+        width:80px;
+        padding:2px 2px;
+      }
+
+
       .swiper-button-prev,
       .swiper-button-next {
         width: 60px;
@@ -267,30 +304,4 @@
      content: "attr" !important;
     }
 
-
-    .view-btn{
-      padding:5px 10px;
-      width:100px;
-      display:flex;
-      justify-content:center;
-      align-content: center;
-      background-color:rgb(255, 255, 255);
-      color:black;
-      border-radius: 3px;
-      margin-top: 10px;
-      transition: all 0.2s ease-in-out;
-    }
-
-    .view-btn:hover{
-      background-color:rgb(176, 64, 0);
-      color:white;
-    }
-
-    .view-btn:hover p{
-      color:white;
-    }
-
-    .view-btn p{
-      color:black;
-      font-weight: bold;
-    }
+    
